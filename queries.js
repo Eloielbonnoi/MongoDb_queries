@@ -33,7 +33,6 @@
 // 32-Escriu una consulta per trobar el name de restaurant, borough, longitud, latitud i cuisine per a aquells restaurants que conteinen 'Mad' com a primeres tres lletres del seu name
 
 use('restaurant');
-
 db.restaurants.find();
 db.restaurants.find({}, { "restaurant_id": 1, "borough": 1, "cuisine": 1 });
 db.restaurants.find({}, { "restaurant_id": 1, "borough": 1, "cuisine": 1, "_id": 0 });
